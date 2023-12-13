@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Learn to Learn Programming</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/form.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1>Learn to Learn Programming</h1>
+    </header>
+
+    <main>
+        <section>Contact Form</h2>
+            <p>If you have any comments, suggestions, or would like to get in touch, please use the form below:</p>
+
+            <form id="contact-form" method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="full-width">
+                    <label for="comments">Comments/Suggestions:</label>
+                    <textarea id="comments" name="comments" rows="4" required></textarea>
+                </div>
+                <div class="full-width">
+                    <label for="rating">Rate the site:</label>
+                    <div id="star-container"></div>        
+                </div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+        
+        <div id="modal-container" class="modal-container">
+            <div class="modal-content">
+                <p id="modal-message">Form submitted successfully!</p>
+                <a href="index.html" id="back-to-home-link">Go back to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="domains.html">Domains</a></li>
+                <li><a href="programming-languages.html">Programming Languages</a></li>
+                <li><a href="contact-form.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">&copy; 2023 "Learn to Learn Programming". All rights reserved.</p>
+    </footer>
+
+    <script src="./js/form.js"></script>
+    <script src="./js/stars.js"></script>
+</body>
+
+</html>

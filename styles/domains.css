@@ -1,0 +1,39 @@
+/* Add any specific styles for domains.html */
+.domains-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.domain-card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+/* .domain-card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+} */
+
+.domain-info {
+    padding: 20px;
+}
+
+.domain-info h2 {
+    margin-bottom: 10px;
+}
+
+.domain-info a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.domain-info a:hover {
+    color: var(--accent-color);
+}

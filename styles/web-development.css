@@ -1,0 +1,70 @@
+/* Add any specific styles for web-development.html */
+
+.tech-stack {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.tech-item {
+    width: 30%;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 1000px) {
+    .tech-item {
+        width: 100%;
+    }
+}
+
+.tech-item--info {
+    display: flex;
+}
+.logo-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    align-self: center;
+}
+.example-image--default {
+    width: 200px;
+    height: auto;
+}
+.example-image--additional-css {
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.tech-item--example pre {
+    background-color: #eee;
+    padding: 0 10px;
+    border-radius: 5px;
+    height: 200px;
+}
+.example-image--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.frameworks-list {
+    list-style-type: none;
+}
+
+.environment-setup-list {
+    columns: 2;
+}
+
+.project-ideas-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.project-ideas-list > li {
+    padding: 0 10px;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Learn to Learn Programming</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/web-development.css">
+</head>
+
+<body>
+    <header>
+        <h1>Learn to Learn Programming</h1>
+    </header>
+
+    <main>
+        <section id="what-is-web-dev">
+            <h2>What is Web Development?</h2>
+            <p>
+                Web development refers to the process of building and maintaining websites or web applications. It involves
+                various aspects, including web design, front-end development, back-end development, and database management.
+            </p>
+            <p>
+                Web development allows you to build websites and web applications that can be accessed by users on the Internet.
+                Using web development technologies, you can create interactive and dynamic websites that can be used for a
+                variety of purposes, including e-commerce, social media, and online banking. Or, for example, you could
+                create a website like this one!
+            </p>
+        </section>
+
+        <section id="web-dev-technologies">
+            <h2>Web Development Technologies</h2>
+            <p>
+                Web development technologies encompass a wide range of tools and frameworks. Some key technologies include
+                HTML, CSS, JavaScript, and popular frameworks like React, Angular, and Vue.js for front-end development.
+                For back-end development, technologies like Node.js, Django, and Flask are commonly used.
+            </p>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <div class="tech-item--info">
+                        <img src="./images/html-logo.png" alt="HTML Logo" class="logo-image">
+                        <div>
+                            <h3>HTML</h3>
+                            <p>HTML is the standard markup language for creating web pages.</p>
+                        </div>
+                    </div>
+                    <div id="html-example" class="tech-item--example">
+                        <h4>Example:</h4>
+                        <pre>
+                            <code>
+&lt;body&gt;    
+    &lt;img src="images/turtle.jpeg" 
+         alt="an example image"&gt;
+&lt;/body&gt;    
+                            </code>
+                        </pre>
+                        <div class="example-image--container">
+                            <img src="./images/turtle.jpeg" alt="an example image" class="example-image--default">
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-item--info">
+                        <img src="./images/css-logo.png" alt="CSS Logo" class="logo-image">
+                        <div>
+                            <h3>CSS</h3>
+                            <p>CSS is used for styling and layout of web pages.</p>
+                        </div>
+                    </div>
+                    <div id="css-example" class="tech-item--example">
+                        <h4>Example:</h4>
+                        <pre>
+                            <code>
+img &#123;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+&#125;
+                            </code>
+                        </pre>
+                        <div class="example-image--container">
+                            <img src="./images/turtle.jpeg" alt="an example image" class="example-image--default example-image--additional-css">
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-item--info">
+                        <img src="./images/javascript-logo.png" alt="JavaScript Logo" class="logo-image">
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>JavaScript is a scripting language that enables interactive web pages.</p>
+                        </div>
+                    </div>
+                    <div id="javascript-example" class="tech-item--example">
+                        <h4>Example:</h4>
+                        <pre>
+                            <code>
+const image = document.querySelector(
+    '#example-image-js');
+image.addEventListener('click', () => &#123;
+    image.setAttribute(
+        'src', 'images/example-after.png');
+&#125;);
+                            </code>
+                        </pre>
+                        <div class="example-image--container">
+                            <img src="./images/turtle.jpeg" alt="an example image" class="example-image--default example-image--additional-css" id="example-image-js">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="frontend-frameworks">
+            <h2>Frontend Frameworks</h2>
+            <p>
+                Frontend frameworks provide a structured way to build dynamic and responsive user interfaces.
+            </p>
+            <ul class="frameworks-list">
+                <li><strong>React:</strong> A JavaScript framework created by Facebook for building rich responsive web applications</li>
+                <li><strong>Angular:</strong> A JavaScript-based open-source framework created by Google.</li>
+                <li><strong>Vue.js:</strong> A progressive open-source JavaScript framework for building user interfaces.</li>
+            </ul>
+        </section>
+
+        <section id="environment-setup">
+            <h2>General Environment Setup</h2>
+            <p>
+                Setting up a development environment is crucial for web development. Depending on the technologies you're using,
+                you may need text editors (e.g., Visual Studio Code), version control systems (e.g., Git), and package managers
+                (e.g., npm or yarn).
+            </p>
+            <ul class="environment-setup-list">
+                <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> - A popular code editor.</li>
+                <li><a href="https://git-scm.com/" target="_blank">Git</a> - A distributed version control system.</li>
+                <li><a href="https://www.npmjs.com/" target="_blank">npm</a> - A package manager for JavaScript.</li>
+            </ul>
+        </section>
+
+        <section id="project-ideas">
+            <h2>Project Ideas</h2>
+            <p>
+                If you're looking for web development project ideas, consider creating one of the following projects. Projects help reinforce your learning and showcase your skills to potential employers.
+            </p>
+            <ul class="project-ideas-list">
+                <li>Responsive Personal Portfolio Website</li>
+                <li>To-Do List Application</li>
+                <li>Weather App using a Public API</li>
+                <li>Interactive Quiz Game</li>
+                <li>Simple Calculator</li>
+                <li>Countdown Timer</li>
+                <li>Image Gallery with Filtering</li>
+                <li>Recipe Book with Search Functionality</li>
+                <li>Animated Landing Page</li>
+                <li>Contact Form with Validation</li>
+                <li>Social Media Sharing Button Integration</li>
+                <li>Currency Converter</li>
+                <li>Interactive Maps using APIs (e.g., Google Maps)</li>
+                <li>Personal Blog Site</li>
+                <li>Quote Generator</li>
+                <li>Memory Card Game</li>
+                <li>GitHub Profile Viewer</li>
+                <li>Responsive Pricing Table</li>
+                <li>Music Player with Playlist</li>
+                <li>Animated CSS Loading Spinner</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="domains.html">Domains</a></li>
+                <li><a href="programming-languages.html">Programming Languages</a></li>
+                <li><a href="contact-form.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">&copy; 2023 "Learn to Learn Programming". All rights reserved.</p>
+    </footer>
+
+    <script>
+        const image = document.querySelector('#example-image-js');
+        image.addEventListener('click', () =>{
+            image.setAttribute('src', 'images/turtle-after.jpeg');
+        });
+    </script>
+</body>
+
+</html>
